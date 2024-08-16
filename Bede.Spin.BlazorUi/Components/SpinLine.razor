@@ -1,0 +1,10 @@
+﻿<div class="d-flex flex-row">
+    @foreach (var itm in Src)
+    {
+        <div class="p-1"><img src="@itm" class="image-fluid"/></div>
+    }
+</div>
+
+@code {
+    [Parameter] public string[] Src { get; set; }
+}
